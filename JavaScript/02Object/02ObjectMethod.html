@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method In JavaScript </title>
+</head>
+<body>
+    <h1>Object Method In JavaScript</h1>
+
+
+    <script>
+
+        // 1. Object.Keys()
+
+
+        // let user = {name : "Jay", age: 21}
+
+        // console.log(Object.keys(user));
+        
+
+
+        // 2. Object.values()
+
+        // console.log(Object.values(user));
+        
+
+        // 3. Object.entries()
+
+        // -> Returns an array of Key-value pairs as array
+
+        // console.log(Object.entries(user));
+
+
+
+        // 3. Object.assign()
+
+
+        // let obj1 = {a:1, b:2}
+        // let obj2 = {c:3, d:4}
+        // let obj3 = {}
+        // console.log(obj1);
+        // console.log(obj2);
+        // Object.assign(obj1, obj2)
+        // console.log(obj1);
+        // console.log(obj2);
+        
+
+
+
+
+
+
+        // Object.assign(obj3, obj1, obj2)
+        // console.log("Obj1", obj1);
+        // console.log("Obj2", obj2);
+        // console.log("Obj3", obj3);
+
+        
+
+        // 5. Object.freeze()
+
+
+        // let obj = {name : "Virat"}
+        // Object.freeze(obj)
+        // obj.name = "Suresh"
+
+        // console.log(obj);
+        
+
+
+        // 6. Object.seal()
+
+        // -> Preventing adding and Removing Propeties but allow modification in existing properties 
+
+        // let sealedObj = {name : "Sealed"}
+        // Object.seal(sealedObj)
+        // sealedObj.name = "Updated"
+        // sealedObj.age = 22
+        // console.log(sealedObj);
+
+
+        // 7. Object.hasOwnProperties
+
+        let obj = {
+            name: "Jay",
+            age: 30,
+            isLoggedIn: true
+        }
+
+
+        console.log(obj.hasOwnProperty("name"));
+        console.log(obj.hasOwnProperty("age"));
+        console.log(obj.hasOwnProperty("email"));
+        
+
+        
+
+
+
+
+        // For in Loop
+
+
+        // let obj = {
+        //     name: "Jay",
+        //     age: 30,
+        //     isLoggedIn: true
+        // }
+
+
+        // for (const key in obj) {
+        //         console.log(key);
+                                
+        // }
+
+        // for (const key in obj) {
+        //     if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        //         const element = obj[key];
+        //         console.log(element);
+                
+                
+        //     }
+        // }
+    </script>
+</body>
+</html>

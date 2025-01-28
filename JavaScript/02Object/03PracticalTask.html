@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object and Methods - Practical Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .task-description {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .task {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .task h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .task ul {
+            list-style: none;
+            padding: 0;
+        }
+        .task li {
+            margin-bottom: 10px;
+        }
+        .task ul li {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Object and Methods - Practical Tasks</h1>
+
+        <div class="task">
+            <h2>1. Basic Object Creation</h2>
+            <ul>
+                <li>Create an object `person` with properties: `name`, `age`, and `city`. Add a method `greet()` that logs: "Hello, my name is [name]."</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>2. Dynamic Property Assignment</h2>
+            <ul>
+                <li>Create an empty object `car`. Dynamically add properties `make`, `model`, and `year` using dot and bracket notation.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>3. Object Constructor</h2>
+            <ul>
+                <li>Write a constructor function `Book` that takes `title`, `author`, and `year` as arguments. Create two `Book` objects and log their details.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>4. Object Methods - Object.keys()</h2>
+            <ul>
+                <li>Create an object `student` with properties: `name`, `grade`, and `subject`. Use `Object.keys()` to log all the keys of the object.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>5. Object Methods - Object.values()</h2>
+            <ul>
+                <li>Use `Object.values()` on the `student` object to log all the values.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>6. Object Methods - Object.entries()</h2>
+            <ul>
+                <li>Iterate over the key-value pairs of the `student` object using `Object.entries()` and log them in the format `key: value`.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>7. Object.assign() Method</h2>
+            <ul>
+                <li>Create two objects `source1` and `source2` with some overlapping properties. Merge them into a new object `target` using `Object.assign()` and log the result.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>8. Working with Prototypes - Object.create()</h2>
+            <ul>
+                <li>Create a prototype object `animal` with properties `type` and a method `sound()`. Use `Object.create()` to create a `dog` object and override the `sound` method to log "Bark".</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>9. Object Freezing and Sealing - Object.freeze()</h2>
+            <ul>
+                <li>Create an object `settings` with properties `theme` and `fontSize`. Use `Object.freeze()` and try to modify its properties. Log the result.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>10. Object Freezing and Sealing - Object.seal()</h2>
+            <ul>
+                <li>Create an object `profile` with properties `username` and `email`. Use `Object.seal()` and try adding, removing, and updating properties. Log what works and what doesn't.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>11. Property Checking - Object.hasOwnProperty()</h2>
+            <ul>
+                <li>Create an object `game` with properties `title` and `genre`. Check if it has a property `platform` using `hasOwnProperty()`.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>12. Dynamic Property Check</h2>
+            <ul>
+                <li>Write a function `checkProperty(obj, prop)` that takes an object and a property name, and returns whether the property exists in the object.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>13. Custom Methods in Objects - Calculator</h2>
+            <ul>
+                <li>Create an object `calculator` with methods `add`, `subtract`, `multiply`, and `divide`. Each method should take two numbers as arguments and return the result.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>14. Custom Methods in Objects - Library System</h2>
+            <ul>
+                <li>Create a `library` object with a method `addBook(title)` that adds a book to its `books` array, and a `listBooks()` method that logs all books.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>15. Iterating Over Objects - for...in Loop</h2>
+            <ul>
+                <li>Create an object `course` with properties `title`, `duration`, and `instructor`. Use a `for...in` loop to log all properties and their values.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>16. Iterating Over Objects - Object.keys() + forEach()</h2>
+            <ul>
+                <li>Use `Object.keys()` and `forEach()` to iterate over an object `movie` and log all keys and their corresponding values.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>17. Nested Objects</h2>
+            <ul>
+                <li>Create a `classroom` object with properties `name`, `students` (an array of student objects), and a method `addStudent(student)` to add a new student object to the `students` array.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>18. Cloning Objects</h2>
+            <ul>
+                <li>Write a function `cloneObject(obj)` that creates a deep clone of the given object using `Object.assign()` or spread syntax. Test it on a nested object.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>19. Object.defineProperty()</h2>
+            <ul>
+                <li>Create an object `employee` with properties `name` and `position`. Use `Object.defineProperty()` to add a non-writable, non-enumerable property `salary`.</li>
+            </ul>
+        </div>
+
+        <div class="task">
+            <h2>20. CRUD Operations with Objects</h2>
+            <ul>
+                <li>Create an object `taskManager` with:</li>
+                <ul>
+                    <li>An array `tasks` to store task objects.</li>
+                    <li>Methods: `addTask(task)`, `deleteTask(taskId)`, `updateTask(taskId, updatedTask)`, and `listTasks()`.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

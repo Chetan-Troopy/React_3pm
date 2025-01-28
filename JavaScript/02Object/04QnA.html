@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .question {
+            font-weight: bold;
+            color: #333;
+        }
+        .answer {
+            margin-left: 20px;
+            color: #555;
+        }
+        .code {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: monospace;
+            color: #d63384;
+            display: block;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>JavaScript Object Questions</h1>
+</header>
+
+<main>
+    <!-- Basic Questions Section -->
+    <section class="section">
+        <h2>Basic Questions</h2>
+        
+        <div class="question">Q1: What is an object in JavaScript?</div>
+        <div class="answer">A: An object is a collection of properties, where each property is defined as a key-value pair. For example:</div>
+        <pre class="code">let obj = { name: "John", age: 30 };</pre>
+
+        <div class="question">Q2: How do you create an object in JavaScript?</div>
+        <div class="answer">A: Objects can be created using object literals, the Object constructor, or Object.create(). Example with an object literal:</div>
+        <pre class="code">let person = { name: "Alice", age: 25 };</pre>
+
+        <div class="question">Q3: How do you access object properties?</div>
+        <div class="answer">A: Object properties can be accessed using dot notation or bracket notation. Example:</div>
+        <pre class="code">console.log(person.name); // Dot notation
+console.log(person["age"]); // Bracket notation</pre>
+
+        <div class="question">Q4: What is the difference between dot notation and bracket notation?</div>
+        <div class="answer">A: Dot notation is used when the property name is a valid identifier. Bracket notation is used when the property name includes special characters, starts with a number, or is dynamic.</div>
+
+        <div class="question">Q5: How do you add a new property to an existing object?</div>
+        <div class="answer">A: You can use dot notation or bracket notation. Example:</div>
+        <pre class="code">let obj = { name: "John" };
+obj.age = 30; // Using dot notation
+obj["city"] = "New York"; // Using bracket notation</pre>
+    </section>
+
+    <!-- Intermediate Questions Section -->
+    <section class="section">
+        <h2>Intermediate Questions</h2>
+
+        <div class="question">Q1: What is Object.keys() used for?</div>
+        <div class="answer">A: It returns an array of all the keys of an object. Example:</div>
+        <pre class="code">let obj = { name: "John", age: 30 };
+console.log(Object.keys(obj)); // ["name", "age"]</pre>
+
+        <div class="question">Q2: What does Object.values() do?</div>
+        <div class="answer">A: It returns an array of all the values of an object. Example:</div>
+        <pre class="code">console.log(Object.values(obj)); // ["John", 30]</pre>
+
+        <div class="question">Q3: What is Object.entries()?</div>
+        <div class="answer">A: It returns an array of key-value pairs of an object. Example:</div>
+        <pre class="code">console.log(Object.entries(obj)); // [["name", "John"], ["age", 30]]</pre>
+
+        <div class="question">Q4: What is Object.assign() used for?</div>
+        <div class="answer">A: It is used to copy or merge properties from one or more source objects into a target object. Example:</div>
+        <pre class="code">let target = {};
+let source = { a: 1, b: 2 };
+Object.assign(target, source);
+console.log(target); // { a: 1, b: 2 }</pre>
+
+        <div class="question">Q5: What is Object.create()?</div>
+        <div class="answer">A: It creates a new object with a specified prototype object. Example:</div>
+        <pre class="code">let proto = { greet: () => "Hello!" };
+let obj = Object.create(proto);
+console.log(obj.greet()); // Hello!</pre>
+    </section>
+</main>
+
+</body>
+</html>
